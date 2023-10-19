@@ -29,3 +29,16 @@ Access granted
 
 
 """
+import time
+q = "Enter a username: "
+q1 = "Enter a password: "
+a = str(input(q))
+a1 = str(input(q1))
+
+while a != "admin" or a1 != "12345":
+    time.sleep(1/2)
+    print("Access denied")
+    a = str(input(q))
+    a1 = str(input(q1))
+else:
+    print("Access Granted")

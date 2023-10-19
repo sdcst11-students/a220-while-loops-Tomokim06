@@ -20,3 +20,11 @@ Example:
 10
 ...
 """
+
+import time
+number = 0
+while number <= 20:
+    print(number)
+    number += 2
+    time.sleep(1/4)
+print("done.")

@@ -17,3 +17,11 @@ example:
 Enter a number: 4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+
+import time
+q = "Enter a number: "
+a = int(input(q))
+
+list = [1,12]
+for i in list:
+    print(i*a)
