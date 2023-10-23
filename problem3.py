@@ -13,3 +13,11 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+
+def fibonacci(n):
+    list = [1, 1]
+    for i in range(2, n):
+        next = list[i - 1] + list[i - 2]
+        list.append(next)
+    return list
+print(fibonacci(12))
